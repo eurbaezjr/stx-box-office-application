@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>STX Entertainment | Genre</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Khula&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <link href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script src="https://kit.fontawesome.com/c58f8cf9af.js" crossorigin="anonymous"></script>
+    <script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.15/lodash.min.js" integrity="sha256-VeNaFBVDhoX3H+gJ37DpT/nTuZTdjYro9yBruHjVmoQ=" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</head>
+<body>
+    
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <img src="STXlogo.png" alt="STX Logo" id="logo" height="59.6px" width="120px">
+    </nav>
+
+    <div class="container">
+        <div class="row">
+            <div class="card col-12">
+                <div class="card-body">
+                    <ul class="nav nav-tabs nav-fill">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Search by Movie Title</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="weekend.html">Search by Weekend</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="genre.html">Search by Genre</a>
+                        </li>
+                    </ul>
+                    <form id="input-value">
+                        <!--DATE RANGE PICKER-->
+                        <p>Please choose a range of dates (note that if nothing is returned, that genre may not have had a movie in that date range):</p>
+                        <div class="flatpickr">
+                            <input type="text" class="datepicker form-control" id="genre-date-range" data-input>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <div class="form-group">
+                                    <select class="form-control" id="genre-input">
+                                        <option>Select a Genre:</option>
+                                        <option>Comedy</option>
+                                        <option>Drama</option>
+                                        <option>Action</option>
+                                        <option>Adventure</option>
+                                        <option>Thriller/Suspense</option>
+                                        <option>Romantic Comedy</option>
+                                        <option>Horror</option>
+                                        <option>Documentary</option>
+                                        <option>Musical</option>
+                                        <option>Black Comedy</option>
+                                        <option>Western</option>
+                                        <option>Concert/Performance</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="form-group">
+                                    <select class="form-control" id="sub-genre-input">
+                                        <option>Select a Sub-genre (optional):</option>
+                                        <option>Supernatural</option>
+                                        <option>Drama</option>
+                                        <option>Action</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group input-icons">
+                            <i class="fas fa-list icon"></i>
+                            <input type="text" class="form-control input-field text-left" id="limit-input" placeholder="Enter number of movies to be returned, ex. 5, 10, etc...">
+                        </div>
+                        <div class="form-group input-icons">
+                            <i class="fas fa-search-dollar icon"></i>
+                            <input type="text" class="form-control input-field text-left" id="genre-revenue-input" placeholder="Search for movies with revenue greater than, ex. 1000000">
+                        </div>
+                        <button type="submit" class="btn btn-primary searchBtn">Search</button>
+                    </form>
+                    <p class="note">Note: Our application will only work with past data, not any future movies.</p>
+                </div>  
+            </div>
+        </div>
+
+        <div class="row responseCard"></div>
+    </div>
+</body>
+</html>
