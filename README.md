@@ -6,13 +6,13 @@
 
 ## Description
 
-Full-Stack application developed for STX Entertainment to help their advertising team compile box office data programmatically through the [Opus API](https://www.opusdata.com/). Unfortanetely, the client did not adopt the application due to the emergence of [IMDbPro](https://pro.imdb.com/signup/index.html?rf=google_brand_us_187248834&ref_google_brand_us_187248834&gclid=Cj0KCQjw-_j1BRDkARIsAJcfmTHsItQNaoOife3lt70a-MADUkm_F-EvpWhLADVXoCp2vexDvBDNPsYaAqnrEALw_wcB) which included similar features at a lower cost than competitive data providers. 
+Full-Stack application developed for STX Entertainment to help their advertising team compile box office data programmatically through the [Opus API](https://www.opusdata.com/). Unfortunately, the client did not adopt the application due to the emergence of [IMDbPro](https://pro.imdb.com/signup/index.html?rf=google_brand_us_187248834&ref_google_brand_us_187248834&gclid=Cj0KCQjw-_j1BRDkARIsAJcfmTHsItQNaoOife3lt70a-MADUkm_F-EvpWhLADVXoCp2vexDvBDNPsYaAqnrEALw_wcB) which included similar features at a lower cost than competitive data providers. 
 
 ## Functionality
 
 The client was able to query and filter the data by movie title, weekend or genre. Advanced filters included looking for movies above a certain level of revenue broken out by day, week or weekends only. In addition, subgenre filters and data range selectors were also available in the UI. 
 
-The application is no longer active due to expiration of the Opus API's data token trial period. However, pleae find the deployed application [HERE](http://stx-box-office.herokuapp.com) to review CSS and HTML structure if desired. 
+The application is no longer active due to expiration of the Opus API's Token trial period. However, pleae find the deployed application [HERE](http://stx-box-office.herokuapp.com) to review CSS and HTML structure if desired. 
 
 ## Process
 
