@@ -4,7 +4,7 @@
   "description": "Box Office Data Compiler for STX Entertainment =======",
   "main": "index.js",
   "dependencies": {
-    "axios": "^0.19.0",
+    "axios": "^0.21.1",
     "express": "^4.17.1",
     "lodash": "^4.17.15",
     "moment": "^2.24.0"
